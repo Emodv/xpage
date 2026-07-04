@@ -1,0 +1,47 @@
+# Config-driven tenant onboarding: one file per business client, no code changes required.
+# `slug` must match the `tenants.slug` row in Supabase created for this client.
+slug: mortgage-broker-demo
+business_name: "Parsa Mortgages"
+timezone: "America/Toronto"
+
+# Inbound channel identifiers — used by the webhook router to resolve which
+# tenant an incoming WhatsApp/Telegram message belongs to.
+whatsapp_phone_number_id: "REPLACE_WITH_WHATSAPP_CLOUD_API_PHONE_NUMBER_ID"
+telegram_bot_username: "ParsaMortgagesBot"
+
+# Google Calendar to check availability on and create bookings in.
+google_calendar_id: "REPLACE_WITH_CALENDAR_ID@group.calendar.google.com"
+
+owner_email: "owner@parsamortgages.example"
+owner_whatsapp_number: "+16475551234"
+
+# Business hours per weekday (24h, local timezone). Used to compute open slots.
+business_hours:
+  mon: ["09:00", "17:00"]
+  tue: ["09:00", "17:00"]
+  wed: ["09:00", "17:00"]
+  thu: ["09:00", "17:00"]
+  fri: ["09:00", "15:00"]
+  sat: null
+  sun: null
+
+appointment_duration_minutes: 30
+
+# Service menu shown to the AI responder — keeps qualification questions and
+# slot offers on-topic for this specific business.
+services:
+  - name: "First-time home buyer mortgage"
+    name_fa: "وام مسکن برای خریداران بار اول"
+  - name: "Mortgage renewal / refinance"
+    name_fa: "تمدید یا رهن مجدد وام مسکن"
+  - name: "Investment property financing"
+    name_fa: "تامین مالی ملک سرمایه‌گذاری"
+
+# System prompt fragment injected into the GPT-4o responder for this tenant.
+ai_persona: >
+  You are the friendly front-desk assistant for Parsa Mortgages, a mortgage
+  brokerage in Toronto serving the Iranian-Canadian community. Reply in the
+  same language the lead writes in (Farsi or English). Be warm, concise,
+  and professional. Your job is to find out what mortgage service they need,
+  their rough budget/price range, and their timeline, then offer 2-3 open
+  appointment slots for a call with the broker.
