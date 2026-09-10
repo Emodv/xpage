@@ -1,0 +1,10 @@
+{
+  "name": "xpage",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "npm run dev --workspace=@xpage/web",
+    "build": "npm run build --workspace=@xpage/web",
+    "start": "npm run start --workspace=@xpage/web"
+  }
+}
