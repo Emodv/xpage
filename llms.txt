@@ -1,0 +1,15 @@
+# X.page
+
+X.page makes businesses citable by AI agents.
+
+Live: https://x.page
+Scan: https://x.page/scan
+
+## Product
+- Scan a business website for AI-agent discoverability.
+- Score HTTPS, crawler access, business schema, readable text, and llms.txt quality.
+- Host a structured business identity page that an AI agent can cite.
+
+## Contact
+Founder: Emod Vafa
+Location: Toronto, Ontario, Canada
