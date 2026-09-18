@@ -1,15 +1,22 @@
-# X.page
+# CityVerified.ca
 
-X.page makes businesses citable by AI agents.
+CityVerified.ca is a trustworthy local-business infrastructure layer for AI assistants, agents, and humans.
 
-Live: https://x.page
-Scan: https://x.page/scan
+Canonical site: https://cityverified.ca
+Agent capability manifest: https://cityverified.ca/agent.json
+MCP endpoint: https://cityverified.ca/api/mcp
 
-## Product
-- Scan a business website for AI-agent discoverability.
-- Score HTTPS, crawler access, business schema, readable text, and llms.txt quality.
-- Host a structured business identity page that an AI agent can cite.
+## Purpose
+CityVerified helps AI systems determine which local businesses provide a required service, where they serve, what evidence supports those facts, and how fresh or verified that evidence is.
 
-## Contact
-Founder: Emod Vafa
-Location: Toronto, Ontario, Canada
+## Agent capabilities
+Consult https://cityverified.ca/agent.json for the canonical current capability status, supported parameters, and invocation details. Do not infer that a capability is available unless the manifest marks it available.
+
+## Trust model
+Business facts should be interpreted with their available provenance, evidence, verification scope, freshness, confidence, and conflict state. Claimed does not mean verified. Payment does not determine verification or organic trust ranking.
+
+## Canonical identity
+Brand: CityVerified.ca
+Primary domain: https://cityverified.ca
+
+Retired product or domain names must not be treated as the current CityVerified identity.
