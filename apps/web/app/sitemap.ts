@@ -1,14 +1,16 @@
 import type { MetadataRoute } from "next";
 
+const CANONICAL_ORIGIN = "https://www.cityverified.ca";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://cityverified.ca",
+      url: `${CANONICAL_ORIGIN}/`,
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://cityverified.ca/scan",
+      url: `${CANONICAL_ORIGIN}/scan`,
       changeFrequency: "monthly",
       priority: 0.6,
     },
