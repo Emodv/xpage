@@ -1,17 +1,18 @@
-# X.page
+# CityVerified.ca
 
-X.page is the trust and action layer between AI agents and the physical economy.
+CityVerified.ca is the trust and action layer between AI agents and the physical economy.
 
-## Pitch tabs
-- https://x.page
-- https://x.page/scan
-- https://x.page/v1/search?need=plumber&geo=toronto
-- https://x.page/llms.txt
+## Canonical product
+- https://cityverified.ca
+- https://cityverified.ca/scan
+- https://cityverified.ca/llms.txt
 
-`licensed=true` currently returns 0 on purpose. Licence remains unverified until a real registry source is stored.
+The canonical infrastructure is this repository, the existing Vercel production project, and Supabase project `rkjgwibukemohkzmtkkf`. Do not create duplicate infrastructure.
+
+`licensed=true` must only be returned when licence evidence is verified from a real registry source and stored with provenance.
 
 ## Vercel Cron
-Project `x-page` → Settings → Cron Jobs
+Use the canonical CityVerified production project → Settings → Cron Jobs.
 
 Path:
 `/api/cron/refresh?secret=CRON_SECRET`
