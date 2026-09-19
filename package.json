@@ -1,10 +1,10 @@
 {
-  "name": "xpage",
+  "name": "city-verified",
   "private": true,
   "workspaces": ["apps/*", "packages/*"],
   "scripts": {
-    "dev": "npm run dev --workspace=@xpage/web",
-    "build": "npm run build --workspace=@xpage/web",
-    "start": "npm run start --workspace=@xpage/web"
+    "dev": "npm run dev --workspace=@city-verified/web",
+    "build": "npm run build --workspace=@city-verified/web",
+    "start": "npm run start --workspace=@city-verified/web"
   }
 }
