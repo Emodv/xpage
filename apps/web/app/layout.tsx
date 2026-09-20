@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  metadataBase: new URL("https://cityverified.ca"),
+  metadataBase: new URL("https://www.cityverified.ca"),
   title: "CityVerified — Trusted Local Business Infrastructure",
   description: "CityVerified helps AI agents and people discover local businesses using structured service, location, provenance, verification, and freshness signals.",
   alternates: {
@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     title: "CityVerified — Trusted Local Business Infrastructure",
     description: "Structured local-business discovery for AI agents and people.",
-    url: "https://cityverified.ca",
+    url: "https://www.cityverified.ca",
     siteName: "CityVerified.ca",
     type: "website"
   }
